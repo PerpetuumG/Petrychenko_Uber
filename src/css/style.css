@@ -34,7 +34,7 @@ nav {
 }
 
 .menu .menu_item {
-  border-right: 2px dotted #000;
+  border-right: 2px dotted #000000;
   padding-right: 28px;
 }
 
@@ -58,14 +58,14 @@ nav {
 
 .subheader .subheader_official {
   margin-top: 6px;
-  color: #fff;
+  color: #ffffff;
   opacity: 0.5;
   font-size: 13px;
   font-weight: 400;
 }
 
 .subheader .subheader_call {
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 300;
   margin-top: 23px;
@@ -75,7 +75,7 @@ nav {
 .subheader .subheader_phone {
   display: block;
   margin-top: 8px;
-  color: #fff;
+  color: #ffffff;
   font-size: 19px;
   font-weight: 400;
   text-transform: uppercase;
@@ -96,7 +96,7 @@ nav {
   background-image: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -109,7 +109,7 @@ nav {
 }
 
 .promo .promo_header {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 60px;
@@ -119,7 +119,7 @@ nav {
 }
 
 .promo .promo_subheader {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 36px;
@@ -131,7 +131,7 @@ nav {
 
 .promo .promo_descr {
   margin-top: 23px;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -152,7 +152,7 @@ nav {
   background-image: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -163,6 +163,7 @@ nav {
 }
 
 .label {
+  position: relative;
   margin: 0 auto;
   height: 24px;
   width: 112px;
@@ -173,9 +174,16 @@ nav {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
+}
+
+.label_white {
+  background-color: #ffffff;
+  color: black;
 }
 
 .title {
+  position: relative;
   margin-bottom: 0;
   margin-top: 38px;
   color: #222222;
@@ -183,14 +191,27 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
+}
+
+.title_white {
+  margin-top: 30px;
+  color: #ffffff;
 }
 
 .subtitle {
+  position: relative;
   margin-top: 19px;
   color: #222222;
   font-size: 17px;
   font-weight: 400;
   text-align: center;
+  z-index: 2;
+}
+
+.subtitle_white {
+  margin-top: 20px;
+  color: #ffffff;
 }
 
 .reasons .reasons_block {
@@ -285,7 +306,7 @@ nav {
 }
 
 .mobile_item_subtitle {
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -310,9 +331,41 @@ nav {
           transform: translateX(-50%);
   width: 26px;
   height: 26px;
-  background-color: #000;
+  background-color: #000000;
   margin: 0 auto;
   border-radius: 100%;
   cursor: pointer;
+}
+
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+.choice .black {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+.choice_descr {
+  color: #222222;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
