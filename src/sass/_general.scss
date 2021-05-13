@@ -8,7 +8,11 @@ header {
     width: 100%;
     height: 50px;
     background-color: #212121;
-    z-index: 2;
+    z-index: 5;
+  }
+
+  .hamburger{
+    display: none;
   }
   
   .menu {
@@ -19,9 +23,13 @@ header {
     list-style-type: none;
   
     &_link {
-      color: #ffffff;
+      color: $white;
       font-size: 15px;
       font-weight: 300;
+      &:hover {
+        text-decoration: none;
+        color: $main-color;
+      }
     }
   
     &_item {
@@ -90,7 +98,7 @@ header {
       @include btn_hover;
     }
   }
-  
+
   .promo {
     min-height: 800px;
     background: url('../img/bg/main_bg.jpg') center (center / cover) no-repeat;
@@ -537,3 +545,7 @@ header {
           }
         }
       }
+
+  .xs-visible {
+     display: none;
+  }

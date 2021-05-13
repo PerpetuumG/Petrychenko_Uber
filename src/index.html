@@ -19,7 +19,7 @@
     <header>
         <nav>
             <div class="container">
-                <ul class="menu menu_active">
+                <ul class="menu">
                     <li class="menu_item">
                         <a href="#" class="menu_link">Главная</a>
                     </li>
@@ -40,31 +40,38 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-6 col-md-4 offset-md-1">
                         <a class="subheader_logo" href="#">
                             <img src="icons/logo.png" alt="logo">
                         </a>
                         <div class="subheader_official">Официальныц партнер Uber в Москве</div>
                     </div>
 
-                    <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                         <div class="subheader_call">Звоните нам ежедневно</div>
-                        <a href="tel:+784957970988" class="subheader_phone">8 495 797 09 88</a>
+                        <a href="tel:84957970988" class="subheader_phone">8 495 797 09 88</a>
                     </div>
-                    <div class="col-md-3 col-lg-2">
-                        <button class="subheader_btn">Заказать звонок</button>
+                    <div class="col-6 col-md-3">
+                        <a href="tel:84957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
+                        <button class="subheader_btn">заказать звонок</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
@@ -87,10 +94,10 @@
         </div>
     </section>
 
-    <section class="reasons">
+    <section class="reasons" id="">
         <div class="container">
             <div class="label">Преимущества</div>
-            <h2 class="title">8 причин работать с нами</h2>
+            <h2 class="title">8 причин начать работать с нами</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="reasons_block">
@@ -225,7 +232,7 @@
         </div>
     </section>
 
-    <section class="mobile">
+    <section class="mobile" id="">
         <div class="container">
             <div class="label">Возможности</div>
             <h2 class="title">Мобильное приложение убер</h2>
@@ -272,12 +279,13 @@
         </div>
     </section>
 
-    <section class="choice">
+    <section class="choice" id="">
         <div class="container">
             <div class="black"></div>
             <div class="label label_white">Возможности</div>
-            <h2 class="title title_white">Выбор - отличная штука</h2>
-            <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
+            <h2 class="title title_white hidden-320">Выбор - отличная штука</h2>
+            <div class="subtitle subtitle_white hidden-320">Закажите автомобиль, который подходит вам по стилю и бюджету
+            </div>
             <img class="choice_img" src="img/car.png" alt="car">
             <div class="black_car">
             </div>
@@ -288,7 +296,7 @@
         </div>
     </section>
 
-    <section class="require">
+    <section class="require" id="">
         <div class="container">
             <div class="label">Возможности</div>
             <div class="title">Условия и требования</div>
@@ -348,7 +356,7 @@
         </div>
     </section>
 
-    <section class="world">
+    <section class="world" id="">
         <div class="container">
             <div class="label label_white">Город</div>
             <div class="title title_white">По всему миру</div>
@@ -410,6 +418,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
